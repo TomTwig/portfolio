@@ -1,0 +1,689 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Portfolio - Tom Rosenzweig</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-nav.css">
+    <link rel="stylesheet" href="styles/style-skill.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="mobile-nav"></div>
+        <div class="overlay overlay-active overlay-initial" id="overlay">
+
+            <nav>
+                <ul>
+                    <li id="navItem-home"><a href="#home">Home</a></li>
+                    <li id="navItem-webdevelopment"><a href="#webdevelopment">Webentwicklung</a></li>
+                    <li id="navItem-gamedevelopment"><a href="#gamedevelopment">Spieleprogrammierung</a></li>
+                    <li id="navItem-3d"><a href="#3d">3D & Film</a></li>
+                    <li id="navItem-about"><a href="#about">Über mich</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="menu-bars" id="menu-bars">
+            <div class="menu-bar1"></div>
+            <div class="menu-bar2"></div>
+            <div class="menu-bar3"></div>
+        </div>
+
+
+
+
+
+
+    </header>
+
+    <main>
+
+        <section id="section-home" class="section-home">
+
+            <div class="home" id="home">
+                <div class="homeInfo">
+                    <p class="homeInfo__subtitle"><span>Web</span>entwickler</p>
+                    <h1 class="homeInfo__title">Tom Rosenzweig</h1>
+                    <p class="homeInfo__info">Webentwicklung | Spieleprogrammierung | Film & 3D</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="section-webdevelopment" class="section-webdevelopment">
+
+            <div class="section-title" id="webdevelopment">
+                <h2>Webentwicklung</h2>
+
+
+            </div>
+
+
+            <div class="quote container flex project" id="quote">
+
+                <div class="quoteInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Zur Inspiration</p>
+                    <h3>Zitat Generator</h3>
+                    <p>Generiert mithilfe einer Zitat API ein zufälliges Zitat.
+                    </p>
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  it">Javascript</li>
+                            <li class="skill__list__element  tool">API</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="quotePreview flex-1 flex-column">
+                    <div class="quotePreview__container">
+                        <div class="quote__sign">
+                            <svg class="svg__quote-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+                            </svg>
+                        </div>
+
+                        <div>
+
+                            <h3 id="quote__text-content">Zitat Generator</h3>
+                        </div>
+                        <p class="quote__text-author" id="quote__text-author">Autho Text</p>
+                    </div>
+                    <button class="quote__button" id="quote__button">Neues Zitat</button>
+                </div>
+
+
+
+
+            </div>
+            <hr>
+            <div class="joke container flex project" id="joke">
+
+                <div class="jokePreview flex-1">
+                    <img src="images/joke_idle_hq.gif" id="joke__image" alt="small-robo">
+                    <button class="joke__button" id="joke__button">erzähle einen Witz</button>
+                    <audio controls id="joke__audio" hidden></audio>
+                </div>
+
+                <div class="jokeInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Roboter,</p>
+                    <h3>Erzähle mir einen Witz!</h3>
+                    <p>Ein kleiner animierter 3D Roboter erzählt durch Kombination von Text-to-Speech und einer Joke API
+                        einen zufälligen Witz aus dem Themenbereich der IT.</p>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element   it">Javascript</li>
+                            <li class="skill__list__element  tool">API</li>
+                            <li class="skill__list__element  tool">Text-to-Speech</li>
+                            <li class="skill__list__element  art">Blender</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <hr>
+
+
+            <div class="face container flex project">
+
+                <div class="faceInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">ein Beispiel</p>
+                    <h3>Gesichtserkennung</h3>
+                    <p>Ein Projekt umgesetzt mit React und Node. Das Grundkonzept basiert auf einer Gesichtserkennungs
+                        API, die Bilder/Bildadressen auswertet. In diesem Beispiel werden die Gesichtszüge der Person
+                        erkannt und farblich markiert.</p>
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  it">Javascript</li>
+                            <li class="skill__list__element  it">React</li>
+                            <li class="skill__list__element  tool">API</li>
+                            <li class="skill__list__element  tool">Clarify</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="facePreview flex-1">
+                    <div class="facePreview__output">
+                        <img id="face__image" class="face__image"
+                            src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhY2V8ZW58MHx8MHx8&w=1000&q=80">
+                        <div id="face__bounding-box" class="face__bounding-box"></div>
+                    </div>
+                    <div class="facePreview__input">
+                        <input id="face__input" class="face__input" placeholder="URL Adresse (jpg, png)" type="text"
+                            value="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhY2V8ZW58MHx8MHx8&w=1000&q=80">
+                        <button id="face__button-search" class="face__button" type="submit">Gesicht erkennen</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="liefer container flex project" id="liefer">
+
+                <div class="lieferPreview flex-1">
+
+                    <img src="images/liefer_preview.png" id="liefer__image" alt="lieferdienst Klon">
+
+
+                
+                </div>
+
+                <div class="lieferInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Roboter,</p>
+                    <h3>Lieferdienst Klon</h3>
+                    <p>Ein Nebenprojekt zu Übungszwecken mit dem Umgang mit Redux in React.
+                        Bislang kann der Benutzer fikitive Gerichte auswählen und filtern, sowie den Bezahlvorgang abschließen. Backend-Anbindungen folgen... 
+                    </p>
+                    <a href="https://tomtwig.github.io/LieferKlon/" target="_blank">Zur Vorschau</a>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element   it">React</li>
+                            <li class="skill__list__element  tool">Redux</li>
+                            <li class="skill__list__element  tool">CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <hr>
+
+
+
+
+            <div class="mentor container project flex" id="mentor">
+
+                <div class="mentorInfo flex-column reveal">
+                    <p class="subtitle-1">Frontend Mentor </p>
+                    <h3>Frontend Challenges</h3>
+                    <p>Eingereichte Projekte zu verschiedenen Problemstellungen im Frontend Bereich. Gegeben sind
+                        Screenshots der Web- und Mobil- Ansicht, sowie einzubindende Elemente, wie Bilder und JSON
+                        Dateien. Es gibt keine Musterlösungen. Nach dem Einreichen, werden in der Community verschiedene
+                        Lösungsmöglichkeiten diskutiert.
+                    </p>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element   it">Javascript</li>
+                            <li class="skill__list__element  it">CSS</li>
+                            <li class="skill__list__element  it">HTML</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="mentorPreview snaps-inline">
+
+
+                    <div class="card">
+                        <a href="https://tomtwig.github.io/interactive-rating-component/" target="_blank">
+                            <img src="images/mentor_interactive_rating_component.jpg" alt="product-card">
+                            <p>Interactive Rating Component</p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://tomtwig.github.io/huddle-landing-page-with-single-introductory-section/"
+                            target="_blank">
+                            <img src="images/mentor_huddle_landing_page.jpg" alt="product-card">
+                            <p>Huddle Landing Page</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tomtwig.github.io/single-price-grid-component/" target="_blank">
+                            <img src="images/mentor_single_price.jpg" alt="product-card">
+                            <p>Single Price Grid</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tomtwig.github.io/four-card-feature-section/" target="_blank">
+                            <img src="images/mentor_four_card_feature.jpg" alt="product-card">
+                            <p>Four Card Feature</p>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://tomtwig.github.io/product-preview-card-component/" target="_blank">
+                            <img src="images/mentor_product_card.jpg" alt="product-card">
+                            <p>Preview Card Component</p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr>
+
+            <div class="portfolio project container flex flex-row-rev" id="portfolio">
+
+                <div class="portfolioInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Portfolio</p>
+                    <h3>Persönliche Webseite</h3>
+                    <p>Diese Webseite zeigt Auszüge meiner bisherigen Projekte. Bei der Erstellung dieser Seite wurden
+                        nur basic HTML, CSS und Vanilla Javascript verwendet, um unter anderem die Grundlagen der
+                        Webentwicklung zu verinnerlichen und ein solides Grundgerüst zu schaffen, welches in Zukunft
+                        weiter verbessert und erweitert werden kann. In diesem Sinne der Skalierbarkeit wurde zudem ein
+                        eigenes Design System entwickelt, um Designänderungen einfacher zu planen und umzusetzen.
+                    </p>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  it">Javascript</li>
+                            <li class="skill__list__element  it">CSS</li>
+                            <li class="skill__list__element  it">HTML</li>
+                            <li class="skill__list__element  it">Figma</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="portfolioPreview">
+
+                    <div class="slideshow-container">
+
+
+                        <div class="mySlides fade">
+                            <img src="images/portfolio_mock.PNG">
+                            <div class="text">Mock Up</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/portfolio_ds.PNG">
+                            <div class="text">Design System</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/portfolio_sticker.jpg">
+                            <div class="text">sticker sheet</div>
+                        </div>
+
+                
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+
+         
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="section-gamedevelopment" class="section-gamedevelopment">
+            <div class="section-title" id="gamedevelopment">
+                <h2>Spieleprogrammierung</h2>
+            </div>
+
+
+
+
+
+            <div class="towar project container flex">
+                <div class="towarInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">TowAR</p>
+                    <h3>AR Mobil Game</h3>
+                    <p>Ein Tower Defense Spiel in Augmented Reality im Low Poly Design. Der Spieler muss seine Basis
+                        gegen Horden von Gegnern verteidigen, indem er mithilfe seines Handys Verteidigungsanlagen auf
+                        dem Spielfeld interaktiv platziert.
+                    </p>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element section-color-2 tool">Unity</li>
+                            <li class="skill__list__element section-color-2 it">C#</li>
+                            <li class="skill__list__element section-color-2 art">Blender</li>
+                            <li class="skill__list__element section-color-2 tool">Vuforia</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="towarPreview flex-1">
+                    <div>
+                        <img id="towarPreview-animation" class="towarPreview__image-animation"
+                            src="images/towar_viking.gif">
+                    </div>
+                    <div>
+                        <img id="towarPreview__image-clip" class="towarPreview__image-clip"
+                            src="images/towar_preview.gif">
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="unity project flex container">
+
+                <div class="unityInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Mobile, Web und Desktop</p>
+                    <h3>Minigames</h3>
+                    <p>Entwicklung von Spielen als Mobile, Web und Desktopanwendungen. Verschiedene kleine Projekte mit
+                        unterschiedlichen Umsetzungs-Arten, wie zum Beispiel sidescroller, top down oder clicker Spiele.
+                    </p>
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  tool">Unity</li>
+                            <li class="skill__list__element  it">C#</li>
+                            <li class="skill__list__element  art">Blender</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="unityPreview flex-1">
+                    <img src="images/unity_minigames.gif" alt="minigames">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="section-3d" class="section-3d">
+            <div class="section-title" id="3d">
+                <h2>3D & Film</h2>
+            </div>
+
+
+            <div class="asset  project container flex">
+                <div class="assetInfo flex-1 flex-column reveal">
+                    <p class="subtitle-1">Architektur Asset Bibliothek</p>
+                    <h3>Addon Entwicklung</h3>
+                    <p>Im Rahmen meiner Bachelor-Thesis habe ich eine Asset Bibliothek als Addon für das 3D Programm
+                        Blender entwickelt, um den Prozess zur Erstellung von Architekturvisualisierungen zu verbessern.
+                        Die Bibliothek fungiert als eine Art Datenbank und enthält eine Reihe von spezifischen 3D
+                        Modellen mit zusätzlichen Funktionen. Frontend und Backend wurden mit Python erstellt und mit
+                        Blenders eigenem Interface verbunden.
+                    </p>
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  it">Python</li>
+                            <li class="skill__list__element  art">Blender</li>
+                            <li class="skill__list__element  art">Cinema 4D</li>
+                            <li class="skill__list__element  art">Architekturvisualisierung</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="assetPreview flex-1">
+
+                    <div class="asset__picture">
+                        <img src="images/asset_pflanzen.PNG" alt="archviz">
+                        <img class="asset__picture__image" src="images/asset_living.png" alt="archviz">
+                        <img class="asset__picture__image" src="images/asset_bedroom.png" alt="archviz">
+                        <img class=" asset__picture__image" src="images/asset_models.png" alt="archviz">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="bunny project container flex">
+
+                <div class="bunnyInfo  flex-column flex-1 reveal">
+                    <p class="subtitle-1">A Forest A Hunter and A Bunny</p>
+                    <h3>Motion Capture Film</h3>
+                    <p>Dieser animierte Kurzfilm im Low Poly Stil ist das Ergebnis einer Gruppenarbeit und wurde mit
+                        Motion Capture Technologie entwickelt.
+                    </p>
+
+                    <div class="skill">
+                        <ul class="skill__list">
+                            <li class="skill__list__element  art">Blender</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="bunnyPreview flex-1">
+
+
+
+                    <div class="bunnyPreview__animation">
+
+                        <div class="bunnyPreview__bunny">
+                            <img src="images/bunny_bunny.png" alt="bunny">
+                        </div>
+
+                        <div class="bunnyPreview__preview">
+                            <img src="images/bunny_hunter.png" alt="hunter">
+                        </div>
+
+
+                    </div>
+                    <img src="images/bunny_preview.gif" alt="minigames" class="bunnyPreview__preview">
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="section-about" class="section-about ">
+            <div class="section-title" id="about">
+                <h2>Über mich</h2>
+            </div>
+
+
+            <div class="project about flex container ">
+
+
+                <div class="aboutInfo flex-1 reveal">
+                    <p class="subtitle-1">Das bin ich</p>
+                    <h3>Über mich selbst</h3>
+                    <p>Ambitionierter Absolvent der Medieninformatik mit praktischen Erfahrungen im Film und 3D Bereich.
+                        Aus eigener Motivation heraus habe ich mir den Großteil meiner Fähigkeiten selbstständig
+                        angeeignet, um mich beruflich und persönlich stetig weiterzuentwickeln. Während meines Studiums
+                        habe ich meine Leidenschaft zur Webentwicklung entdeckt und suche daher nun Möglichkeiten
+                        Berufserfahrungen zu sammeln und von erfahrenen Fachleuten zu lernen.</p>
+                </div>
+
+                <div class="aboutPreview flex-1">
+                    <img src="images/about_pic.jpg" alt="profile picture">
+                </div>
+            </div>
+            <hr>
+
+            <div class="container">
+                <p class="subtitle-1">Mainstack</p>
+
+                <h3>Skills</h3>
+
+                <div class="skills">
+
+                    <div>
+                        <h4>IT</h4>
+                        <div class="skills__grid">
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_html.svg">
+                                <p>HTML</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_css.svg">
+                                <p>css</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_javascript.svg">
+                                <p>Javascript</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_react.svg">
+                                <p>React</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_git.svg">
+                                <p>Git</p>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h4>Design</h4>
+                        <div class="skills__grid">
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_ps.svg">
+                                <p>Photoshop</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_illustrator.svg">
+                                <p>Illustrator</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_figma.svg">
+                                <p>Figma</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>Film & 3D</h4>
+                        <div class="skills__grid">
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_premiere.svg">
+                                <p>Premiere</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_ae.svg">
+                                <p>After Effects</p>
+                            </div>
+
+                            <div class="skills__grid__element">
+                                <img src="icons/icon_blender.svg">
+                                <p>Blender</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer container" id="footer">
+        <div class="flex-1">
+            <p>Kontakt</p>
+            <ul>
+                <li>Tom Rosenzweig</li>
+                <li>24939 Flensburg</li>
+                <li>Burgstraße 6</li>
+                <br>
+                <li>E-Mail:<br> info@tomrosenzweig.de</li>
+            </ul>
+        </div>
+
+        <div class="flex-1">
+            <p>Copyright by Tom Rosenzweig 2022</p>
+            <ul class="social-links">
+                <li><a id="footer__link" target="_blank" href="impressum.html">Impressum</a></li>
+                <li><a id="footer__link" href="datenschutz.html" target="_blank">Datenschutzerklärung</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="flex-1">
+
+            <p>Social</p>
+            <ul class="social-links">
+                <li style="text-align: -webkit-center;">
+                    <a href="https://github.com/TomTwig" target="_blank">Github</a>
+                    <img width="20px" src="icons/icon_git.svg">
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/voice.js"></script>
+    <script src="scripts/joke.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/bunny.js"></script>
+    <script src="scripts/face.js"></script>
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/quote.js"></script>
+    <script src="scripts/towar.js"></script>
+    <script src="scripts/asset.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
